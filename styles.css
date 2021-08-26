@@ -1,0 +1,74 @@
+.banner {
+    width: 100%;
+    height: 500px;
+}
+
+.banner .inner-banner {
+    background-image: url('images/freegifmaker.me_2hyGm.gif');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.banner .inner-banner h1 {
+    padding-top: 225px;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner .inner-banner p {
+    padding-top: 25px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.utilidades {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.utilidades .info-util-uno {
+    background-color: #1c003b;
+}
+
+.utilidades .info-util-dos {
+    background-color: #bc4ed8;
+}
+
+.utilidades .info-util-uno h3{
+    color: #ffffff;
+}
+
+.utilidades .info-util-dos h3{
+    color: #ffffff;
+}
+
+.utilidades .info-util-uno p{
+    color: #ffffff;
+}
+
+.utilidades .info-util-dos p{
+    color: #ffffff;
+}
+
+.utilidades .imagen-util img{
+    width: 100%;
+    height: 100%;
+}
+
+.opiniones-caja {
+    width: 100%;
+    background-color: #1c003b;
+    height: auto;
+}
+.opinions {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 25px 295px;
+}
+
