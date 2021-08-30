@@ -8,11 +8,17 @@ h1 {
 .navegacion {
     position: fixed;
     width: 100%;
+    z-index: 3;
 }
 
 .navegacion .container-fluid .navbar-brand img {
     width: 75px;
     height: 75px;
+}
+
+.actionsSignIn {
+    text-decoration: none;
+    color: #bc4ed8;
 }
 
 .banner {
@@ -104,7 +110,10 @@ h1 {
     padding: 25px 0 25px 295px;
 }
 
-
+.opinions .card {
+    width: 12rem;
+    height: 14rem;
+}
 .faq {
     padding-top: 15px;
     background-color: #bc4ed8
@@ -176,4 +185,52 @@ h1 {
 
 .pie-pag .iconos-redes img {
     width: 100%;
+}
+
+@media (max-width: 425px){
+    body {
+        width: 100%;
+    }
+
+    .navegacion {
+        width: 100%;
+    }
+    
+    .banner{
+        width: 100%;
+    }
+
+    .banner .inner-banner {
+        width: 100%;
+    }
+
+    .opinions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 95px;
+    }
+
+    .opinions .col {
+        padding: 15px 100px;
+    }
+    .opinions .card {
+        width: 16rem;
+    }
+
+    .faq .faq-texto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .faq .acordeon {
+        width: 100%;
+        padding: 25px 0 25px 0;
+    }
 }
