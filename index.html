@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel= "stylesheet" href="styles.css">
     <title>Proyecto sin nimbre</title>
 </head>
 <body>
     <section class="navegacion">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo_size.jpg" alt="">
+              </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Utilidades</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Reseñas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Faq</a>
                   </li>
                 </ul>
+                <form class="d-flex actions justify-content-center justify-content-lg-end align-items-center">
+                  <a class="actionsSignIn" href="">Iniciar sesión</a>
+                  <button type="button" class="btnm"> Nueva Cuenta</button>
+                </form>
               </div>
             </div>
           </nav>
@@ -79,8 +89,8 @@
         </article>
 
         <article class="info-util-dos">
-          <h3>Aprende con los demas</h3>
-          <p>Podras ver el trabajo de gente muy talentosa de tu ciudad.
+          <h3>Todo tipo de arte</h3>
+          <p>Fotografia, dibujos, pinturas, escritos, cortos, todo tipo de arte es recibido.
           </p>
         </article>
       </div>
@@ -91,11 +101,11 @@
       <div class="col">
         <div class="card" style="width: 12rem;">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+            <h5 class="card-title">Miguel</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Escritor</h6>
+            <p class="card-text">Partum me ayudo a encontrar gente que le gusta mi escritura al igual que gente
+              que me dio consejos para mejorar como escritor.
+            </p>
           </div>
         </div>    
       </div>
@@ -103,11 +113,9 @@
       <div class="col">
         <div class="card" style="width: 12rem;">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+            <h5 class="card-title">Carolina</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Fotografa</h6>
+            <p class="card-text">Lo mejor de Partum, es la comunidad que se crea con todos los demas artistas.</p>
           </div>
         </div>    
       </div>
@@ -115,17 +123,95 @@
       <div class="col">
         <div class="card" style="width: 12rem;">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+            <h5 class="card-title">Alejandro</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Editor de video</h6>
+            <p class="card-text">Lo que mas megusta de la pagina, es el poder ver la cantidad de talento que hay afuera.
+            </p>
           </div>
         </div>    
       </div>
 
     </div>
   </section>
+
+  <section class="faq">
+    
+    <article class="faq-texto">
+      <h3>Preguntas frecuentemente hechas</h3>
+      <p>A continuación una lista de preguntas que se realizan frecuentementepor usuarios 
+        y nuevos usuarios
+      </p>
+    </article>
+
+    <article class="acordeon">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              ¿Cuál es el precio de la plataforma?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">El hacer una cuenta es totalmente gratis.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              ¿Si no tengo experiencia artistica, puedo hacer una cuenta?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Por supuesto que si, la plataforma esta hecha para generar una buena comunidad
+              de artistas, donde todos puedan compartir y aprender unos de otros.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              ¿Qué clase de arte puedo subir?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Cualquier tipo de arte, desde fotos, videos, hasta poesía.</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="msj-final">
+    <article class="texto-mensaje-final">
+      <h3>Que estas esperendo</h3>
+      <p>Inicia con nosotros</p>
+    </article>
+    <article class="boton-mensaje-final">
+      <button type="button" class="btnr">Crea una cuenta</button>
+    </article>
+  </section>
+
+  <footer class="pie-pag">
+    <div class="info-pie">
+      <p>Todos los derechos reservados</p>
+      <p>Siguenos en nuestras redes</p>
+    </div>
+    <hr>
+    <div class="iconos-redes">
+      
+      <a href="">
+        <img src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-icono-de-instagram-logo-by-vexels.png" alt="icono insta">
+      </a>
+
+      <a href="">
+        <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" alt="icono twitter">
+      </a>
+
+      <a href="">
+        <img src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-icono-de-facebook-logo-by-vexels.png" alt="icono facebook">
+      </a>
+    </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
